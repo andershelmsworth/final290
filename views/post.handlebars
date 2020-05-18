@@ -1,0 +1,29 @@
+
+<h1>POST Request Received</h1>
+{{#if dict}}
+<table>
+<thead>
+  <th>Parameter name</th>
+  <th>Value</th>
+</thead>
+<tbody>
+{{#each dict}}
+<tr><td>{{@key}}</td><td>{{this}}</td></tr>
+{{/each}}
+</tbody>
+</table>
+{{/if}}
+
+{{#if bodyParams}}
+<table>
+<thead>
+  <th>Body Parameter name</th>
+  <th>Value</th>
+</thead>
+<tbody>
+{{#each bodyParams}}
+<tr><td>{{@key}}</td><td>{{this}}</td></tr>
+{{/each}}
+</tbody>
+</table>
+{{/if}}

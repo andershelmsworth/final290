@@ -1,0 +1,2 @@
+C:\Users\Work\source\repos\finalProject290\obj\Debug\finalProject290.njsprojAssemblyReference.cache
+C:\Users\Work\source\repos\finalProject290\bin\Microsoft.NodejsTools.WebRole.dll
