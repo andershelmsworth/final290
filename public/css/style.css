@@ -1,0 +1,31 @@
+.navbar, .nav-link, .navbar-brand {
+    background-color:#1974D2 !important;
+	color:#cde7f0 !important;
+}
+
+.navbar-brand {
+	color:#fff !important;
+}
+
+.navbar > a {
+	color:#FFFFFF !important;
+	font-weight:bold !important;
+}
+
+.jumbo-top {
+	background-color:#000080 !important;
+	color:#FFFFFF !important;
+}
+
+.carousel-indicators li {
+  background-color: #999 !important;
+  background-color: rgba(70,70,70,.25) !important;
+}
+
+.carousel-indicators .active {
+  background-color: #444 !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	background-color: black !important;
+}

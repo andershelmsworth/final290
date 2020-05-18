@@ -15,6 +15,7 @@
 //CITATION: See Ecampus Materials, Works Cited
 var express = require("express");
 var handlebars = require("express-handlebars").create({ defaultLayout: "main" });
+var path = require('path');
 
 var app = express();
 app.engine("handlebars", handlebars.engine);
@@ -23,6 +24,10 @@ app.set("view engine", "handlebars");
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+app.use(express.static('views/images')); 
+app.use(express.static('public'));
+
 
 app.set("port", 25637);
 
@@ -44,28 +49,8 @@ app.post("/", function (req, res) {
 ** Returns: none
 *********************************************************************/
 app.get("/", function (req, res) {
-
-    queryParameters = {};
-    let countOfParams = 0;
-
-    //Loop over query params
-    for (let i in req.query) {
-        queryParameters[i] = req.query[i];
-        countOfParams++;
-    }
-
-    if (countOfParams > 0) {
-        //Params found, add to context
-        let context = {};
-        context.dict = queryParameters;
-        res.render("get.handlebars", context);
-    }
-
-    else {
-        //No params found, pass empty context
-        let context = {};
-        res.render("get.handlebars", context);
-    }
+    let context = {};
+    res.render("get.handlebars", context);
 });
 
 /*********************************************************************
@@ -74,8 +59,8 @@ app.get("/", function (req, res) {
 ** What it does: Displays a mostly blank page
 ** Returns: none
 *********************************************************************/
-app.get("/other-page", function (req, res) {
-    res.render("other-page");
+app.get("/transmog", function (req, res) {
+    res.render("transmog");
 });
 
 /*********************************************************************
