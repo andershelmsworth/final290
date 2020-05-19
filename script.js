@@ -31,7 +31,7 @@ app.use(express.static('views/images'));
 app.use(express.static('public'));
 
 
-app.set("port", 25637);
+app.set("port", 25638);
 
 
 /*********************************************************************
@@ -121,9 +121,13 @@ app.listen(app.get("port"), function () {
 
 
 /* WORKS CITED
+Bootstrap Contributors. "Carousel." Bootstrap Documentation, https://getbootstrap.com/docs/4.0/components/carousel/.
+Bootstrap Contributors. "Getting Started." Bootstrap Documentation, https://getbootstrap.com/docs/4.0/getting-started/introduction/.
 Ecampus Materials. "Server Side with Node.js." EECS.oregonstate.edu, https://eecs.oregonstate.edu/ecampus-video/CS290/core-content/hello-node/hello-node.html.
 Flambino <StackOverflow Username>. "How to create dictionary and add key–value pairs dynamically?" StackOverflow, https://stackoverflow.com/questions/7196212/how-to-create-dictionary-and-add-key-value-pairs-dynamically.
 Language Guide. "Built-in helpers." Handlebars.js, https://handlebarsjs.com/guide/builtin-helpers.html#if.
 Pasko, Slawomir. "How can I get the names of name-value pairs in Handlebars?" StackOverflow, https://stackoverflow.com/questions/20518179/how-can-i-get-the-names-of-name-value-pairs-in-handlebars.
 sirthud <StackOverflow Username>. "req.body empty on posts" StackOverflow, https://stackoverflow.com/questions/24543847/req-body-empty-on-posts.
+W3schools Contributors. Bootstrap 4 Tutorial. W3schools, https://www.w3schools.com/bootstrap4/.
+W3schools Contributors. Bootstrap JS Carousel. W3schools, https://www.w3schools.com/bootstrap/bootstrap_ref_js_carousel.asp.
 */
