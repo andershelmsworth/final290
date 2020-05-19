@@ -16,6 +16,8 @@
 var express = require("express");
 var handlebars = require("express-handlebars").create({ defaultLayout: "main" });
 var path = require('path');
+//app.use('/static', express.static('public'));
+
 
 var app = express();
 app.engine("handlebars", handlebars.engine);
@@ -54,13 +56,33 @@ app.get("/", function (req, res) {
 });
 
 /*********************************************************************
-** Other page's route
+** Transmog page's route
 ** Parameters are: Path, req/res function
-** What it does: Displays a mostly blank page
+** What it does: Displays a transmog page
 ** Returns: none
 *********************************************************************/
 app.get("/transmog", function (req, res) {
     res.render("transmog");
+});
+
+/*********************************************************************
+** Mounts page's route
+** Parameters are: Path, req/res function
+** What it does: Displays a mounts page
+** Returns: none
+*********************************************************************/
+app.get("/mounts", function (req, res) {
+    res.render("mounts");
+});
+
+/*********************************************************************
+** Tanking page's route
+** Parameters are: Path, req/res function
+** What it does: Displays a tanking page
+** Returns: none
+*********************************************************************/
+app.get("/tanking", function (req, res) {
+    res.render("tanking");
 });
 
 /*********************************************************************
